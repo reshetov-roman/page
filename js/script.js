@@ -38,7 +38,6 @@ class DeliveryThankPage {
     
     const swiperThankSlideCount = document.querySelector('.delivery-thank-page-init .swiper-wrapper');
           
-
     const countSlides = (countSlides) => {
       if(countSlides > 10)
         countSlides = 10;
@@ -130,11 +129,11 @@ class DeliveryThankPage {
         const disappearingMessage = (text) => {
           const messageAppend = document.querySelector('.delivery-thank-page');
           const createWrp = document.createElement('div');
-              createWrp.classList.add('page-delivery__wrp');
+              createWrp.classList.add('delivery-thank-page__wrp');
               createWrp.style.zIndex = this.indexMessage++;
           const createMess = document.createElement('span');
               createWrp.appendChild(createMess);
-              createMess.classList.add('page-delivery__message');
+              createMess.classList.add('delivery-thank-page__message');
               createMess.innerHTML = `Номер доставки ${text.replace(/[^+\d]/g, '')} скопирован в буфер обмена`;
               messageAppend.append(createWrp);
               
@@ -190,13 +189,9 @@ class DeliveryThankPage {
     }
 
     this.valueQr.forEach(random => {
-      console.log(random.value = getRandomInt(3323443434));
+      console.log(random.value = getRandomInt(33234432434));
     });
 
-    
-
-
-    
 
     this.qrcode.forEach((elmQr, i) => {
     const qr = new QRCode(elmQr);
