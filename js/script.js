@@ -134,11 +134,11 @@ class DeliveryThankPage {
           const createMess = document.createElement('span');
               createWrp.appendChild(createMess);
               createMess.classList.add('delivery-thank-page__message');
-              createMess.innerHTML = `Номер доставки ${text.replace(/[^+\d]/g, '')} скопирован в буфер обмена`;
+              createMess.innerHTML = `Номер доставки ${text} скопирован в буфер обмена`;
               messageAppend.append(createWrp);
               
                setTimeout(() => {
-                createWrp.parentNode.querySelector('.page-delivery__wrp').remove();
+                createWrp.parentNode.querySelector('.delivery-thank-page__wrp').remove();
                }, 5000);
         }
       }
