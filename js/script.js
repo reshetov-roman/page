@@ -139,7 +139,7 @@ class DeliveryThankPage {
               
                setTimeout(() => {
                 createWrp.parentNode.querySelector('.page-delivery__wrp').remove();
-               }, 53000);
+               }, 5000);
         }
       }
     }
@@ -177,7 +177,7 @@ class DeliveryThankPage {
             
              setTimeout(() => {
               createWrp.parentNode.querySelector('.delivery-thank-page-wrapper--notice').remove();
-             }, 50300);
+             }, 5000);
       }
     }
   }
